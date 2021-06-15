@@ -14,10 +14,10 @@ func bubbleSort(_ array: inout [Int]) -> [Int] {
     return array;
 }
 
-public func testBubbleSort() {
-    var testArray = generateRandomArray(maxSize: 100, maxValue: 10)
-    print("O: \(testArray)")
+public func testBubbleSort(testArray: inout [Int]) {
+//    var testArray = generateRandomArray(maxSize: 10, maxValue: 10)
+    print("BubbleSort O: \(testArray)")
     let result = bubbleSort(&testArray)
-    print("E: \(result)")
+    print("BubbleSort E: \(result)")
 }
 
